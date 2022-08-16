@@ -101,7 +101,7 @@ parameters:
   - name: TENANT_TRANSLATOR_HOST
   required: true
   - name: TENANT_TRANSLATOR_PORT
-    value: '8892'
+    value: '8891'
   - name: POPULATOR_LOG_FORMAT
     value: cloudwatch
   - name: POPULATOR_IMAGE
@@ -175,7 +175,7 @@ Metrics produced by org-id-column-populator will be available in Prometheus unde
   The updating of the org-id fields in the database took too long.  The `--db-operation-timeout` command line
   option can be used to adjust the database timeout (the default is 10 seconds).
 
-* Error sending HTTP request: Post \"http://apicast.3scale-stage.svc.cluster.local:8892/internal/orgIds\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"
+* Error sending HTTP request: Post \"http://apicast.3scale-stage.svc.cluster.local:8891/internal/orgIds\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"
 
   The calls to the tenant translation service took too long.
 
