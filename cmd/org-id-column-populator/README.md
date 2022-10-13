@@ -137,7 +137,7 @@ As a result, you will need to set those environment variables manually for testi
 in the ephemeral environments:
 
 ```
-bonfire deploy my-app -p my-app/TENANT_TRANSLATOR_HOST=apicast.3scale-dev.svc.cluster.local
+bonfire deploy my-app -p my-app/TENANT_TRANSLATOR_HOST=gateway.3scale-dev.svc.cluster.local
 ```
 
 ## Verifying the results
@@ -175,7 +175,7 @@ Metrics produced by org-id-column-populator will be available in Prometheus unde
   The updating of the org-id fields in the database took too long.  The `--db-operation-timeout` command line
   option can be used to adjust the database timeout (the default is 10 seconds).
 
-* Error sending HTTP request: Post \"http://apicast.3scale-stage.svc.cluster.local:8891/internal/orgIds\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"
+* Error sending HTTP request: Post \"http://gateway.3scale-stage.svc.cluster.local:8891/internal/orgIds\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"
 
   The calls to the tenant translation service took too long.
 
